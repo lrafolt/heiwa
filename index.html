@@ -416,7 +416,7 @@ JIN SEI KUN – preporuke za život<br>
 	<script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
 	<script>
-	$.cookieBar({message:"Ove internetske stranice koriste tzv. kolačiće za pružanje boljeg korisničkog iskustva.",acceptText:"OK",fixed:true,bottom: true});
+	if($.cookieBar){$.cookieBar({message:"Ove internetske stranice koriste tzv. kolačiće za pružanje boljeg korisničkog iskustva.",acceptText:"OK",fixed:true,bottom: true});}
 	var lazyLoadInstance = new LazyLoad({
 });
     </script>

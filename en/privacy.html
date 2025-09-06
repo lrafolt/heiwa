@@ -222,7 +222,7 @@
     <script src="/js/script.js"></script>
 	<script src="/js/jquery.cookiebar.js"></script>
 	<script>
-	$.cookieBar({message:"This web site use cookies for better user experience.",acceptText:"OK",fixed:true,bottom: true});
+	if ($.cookieBar) { $.cookieBar({ message: "This web site use cookies for better user experience.", acceptText: "OK", fixed: true, bottom: true }); }
     </script>
     <!-- coded by kraken-->
   </body>

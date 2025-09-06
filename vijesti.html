@@ -251,7 +251,7 @@
 	<script src="/js/simple-lightbox.min.js"></script>
 	<script src="/js/jquery.cookiebar.js"></script>
 	<script>
-	$.cookieBar({message:"Ove internetske stranice koriste tzv. kolačiće za pružanje boljeg korisničkog iskustva.",acceptText:"OK",fixed:true,bottom: true});
+	if($.cookieBar){$.cookieBar({message:"Ove internetske stranice koriste tzv. kolačiće za pružanje boljeg korisničkog iskustva.",acceptText:"OK",fixed:true,bottom: true});}
 	document.addEventListener("mv-load", function(){
 		var lightbox = new SimpleLightbox('.blog-layout-main a.news-image', { nav:false });
 	});
